@@ -134,7 +134,7 @@ window.fbAsyncInit = function () {
 // Here we run a very simple test of the Graph API after login is
 // successful. See statusChangeCallback() for when this call is made.
 function testAPI() {
-    document.getElementById('btnIngresar').style.visibility = 'visible';
+    //document.getElementById('btnIngresar').style.visibility = 'visible';
     console.log('Welcome! Fetching your information.... ');
     FB.api('/me?fields=name,email', function (response) {
         console.log(response)
