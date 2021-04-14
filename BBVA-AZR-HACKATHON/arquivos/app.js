@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $(".banner-ld-bebes").owlCarousel({
         items: 1,
         loop: true,
@@ -66,16 +66,18 @@ $(document).ready(function(){
 })
 
   // This is called with the results from from FB.getLoginStatus().
-  function statusChangeCallback(response) {
+function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
     // The response object is returned with a status field that lets the
     // app know the current login status of the person.
     // Full docs on the response object can be found in the documentation
     // for FB.getLoginStatus().
-    if (response.status === 'connected') {
+      if (response.status === 'connected') {
+          console.log(status);
         // Logged into your app and Facebook.
         testAPI();
+
     } else if (response.status === 'not_authorized') {
         // The person is logged into Facebook, but not your app.
         document.getElementById('status').innerHTML = 'Login with Facebook ';
@@ -132,11 +134,11 @@ window.fbAsyncInit = function () {
 // Here we run a very simple test of the Graph API after login is
 // successful. See statusChangeCallback() for when this call is made.
 function testAPI() {
+    document.getElementById('btnIngresar').style.visibility = 'visible';
     console.log('Welcome! Fetching your information.... ');
-    FB.api('/me?fields=name,email,photo', function (response) {
+    FB.api('/me?fields=name,email', function (response) {
         console.log(response)
         console.log('Successful login for: ' + response.name);
-
-        document.getElementById("status").innerHTML = '<p>Welcome ' + response.name + '! <a href=fblogincontroller.jsp?user_name=' + response.name.replace(" ", "_") + '&user_email=' + response.email + '>Continue with facebook login</a></p>'
+        //document.getElementById("status").innerHTML = '<p>Welcome ' + response.name + '! <a href=fblogincontroller.jsp?user_name=' + response.name + '&user_email=' + response.email + '> Continue with facebook login</a></p>'
     });
 }
