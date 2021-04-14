@@ -1,0 +1,255 @@
+﻿body {
+}
+
+.img-logo {
+    width: 90px;
+}
+
+
+::-webkit-scrollbar {
+    width: 1em;
+    height: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #162056;
+}
+
+::-webkit-scrollbar-track {
+    background: #80c2e4;
+}
+
+body {
+    scrollbar-face-color: #162056;
+    scrollbar-track-color: #80c2e4;
+}
+
+.bord-all {
+    border: 1px solid rgba(0,0,0,0.07) !important;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.dot-danger {
+    background-color: #f44336;
+}
+
+.dot-success {
+    background-color: #78BE20;
+}
+
+/*------------------------*/
+/*       7. Teaser        */
+/*------------------------*/
+.Teaser {
+    padding: 94.5px 5%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #ffffff;
+}
+
+.Teaser-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #162056;
+    opacity: 0.9;
+}
+
+.Wrapper--set1 .Teaser-layer {
+    background-color: #162056;
+}
+
+.Wrapper--set2 .Teaser-layer {
+    background-color: #42145F;
+}
+
+.Wrapper--set3 .Teaser-layer {
+    background-color: #00859b;
+}
+
+.Teaser-intro {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+    .Teaser-intro .h2, .Teaser-intro .h3 {
+        margin: 0 0 31px;
+        color: white;
+    }
+
+    .Teaser-intro .t4 {
+        margin-bottom: 46px;
+    }
+
+.Teaser-item {
+    padding: 0 20px;
+}
+
+.Teaser-icon {
+    width: 90px;
+    height: 90px;
+    padding: 18px;
+    border: 2px solid #A4D7F4;
+    border-radius: 50%;
+    margin: 0 auto 27px;
+}
+
+.Wrapper--set1 .Teaser-icon {
+    border-color: #A4D7F4;
+}
+
+.Wrapper--set2 .Teaser-icon,
+.Wrapper--set3 .Teaser-icon {
+    border-color: #FFE282;
+}
+
+.Teaser-svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.Wrapper--set1 .Teaser-svg path {
+    fill: #A4D7F4;
+}
+
+.Wrapper--set2 .Teaser-svg path,
+.Wrapper--set3 .Teaser-svg path {
+    fill: #FFE282;
+}
+
+.Teaser-item .h6 {
+    margin: 27px 0 35px;
+    font-weight: bold;
+}
+
+.secondColor--yellow .Teaser-bar path {
+    fill: #FFE282;
+}
+
+.secondColor--green .Teaser-bar path {
+    fill: #E1EA80;
+}
+
+.secondColor--lila .Teaser-bar path {
+    fill: #C5A3CC;
+}
+
+/*------------ 7-1. TEASER RESPONSIVE -----------*/
+@media screen and (min-width: 781px) and (max-width: 1099px) {
+    .Teaser {
+        padding: 105px 5%;
+    }
+
+    .Teaser-item .h6 {
+        margin: 25px 0 25px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .Teaser {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .Teaser-intro {
+        width: 100%;
+    }
+
+        .Teaser-intro .h2 {
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 30px;
+            letter-spacing: -0.03em;
+            margin-bottom: 15px;
+        }
+
+        .Teaser-intro .t4 {
+            font-size: 13px;
+            line-height: 16px;
+            letter-spacing: -0.03em;
+            font-weight: 300;
+            margin: 0 0 34px;
+        }
+
+    .Teaser-item {
+        padding-bottom: 36px;
+    }
+
+    .Teaser-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 18px;
+        padding: 10px;
+    }
+
+    .Teaser-svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Teaser-item .h6 {
+        font-size: 27px;
+        line-height: 26px;
+        letter-spacing: -0.03em;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .Teaser .slick-dots li button {
+        background: #ffffff;
+    }
+
+    .Teaser .slick-dots li.slick-active button {
+        background: #A4D7F4;
+    }
+
+    .Wrapper--set1 .Teaser .slick-dots li.slick-active button {
+        background: #A4D7F4;
+    }
+
+    .Wrapper--set2 .Teaser .slick-dots li.slick-active button {
+        background: #A1D6CA;
+    }
+
+    .Wrapper--set3 .Teaser .slick-dots li.slick-active button {
+        background: #c4d600;
+    }
+}
+
+/*.mainnav-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    transition: background-color .35s;
+    z-index: 10000
+}
+
+#container.mainnav-in .mainnav-backdrop {
+    bottom: 0;
+    background-color: rgba(0,0,0,0.75);
+    transition: background-color .35s
+}
+
+@media (min-width: 768px) {
+    #mainnav-container {
+        padding-top: 59px
+    }
+
+    #container.mainnav-in .mainnav-backdrop {
+        display: none
+    }
+}*/

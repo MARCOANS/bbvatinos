@@ -139,6 +139,6 @@ function testAPI() {
     FB.api('/me?fields=name,email', function (response) {
         console.log(response)
         console.log('Successful login for: ' + response.name);
-        //document.getElementById("status").innerHTML = '<p>Welcome ' + response.name + '! <a href=fblogincontroller.jsp?user_name=' + response.name + '&user_email=' + response.email + '> Continue with facebook login</a></p>'
+        document.getElementById("status").innerHTML = '<p>Bienvenido ' + response.name + '!,... Ahora puedes ingresar tu nro. de documento</p>'
     });
 }

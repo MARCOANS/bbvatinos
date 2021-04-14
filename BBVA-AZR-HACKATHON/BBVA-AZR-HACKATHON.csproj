@@ -93,6 +93,8 @@
     <Content Include="arquivos\logo_ld_bbs.png" />
     <Content Include="arquivos\primera_img.svg" />
     <Content Include="arquivos\style.css" />
+    <Content Include="arquivos\banner-sec-1-desk.png.jpeg" />
+    <Content Include="arquivos\banner-sec-2-desk.png.jpeg" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\custom.css" />
