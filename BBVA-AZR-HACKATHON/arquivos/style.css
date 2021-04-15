@@ -159,6 +159,17 @@ iframe{
     justify-content: center;
     align-items: center;
 }
+.bg-blue{
+    background-color: #072146;
+    color: #ffffff;
+}
+.productos{
+    padding-top: 80px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media (min-width: 576px){
     .container-ld {
         max-width: 540px;
